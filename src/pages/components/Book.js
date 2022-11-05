@@ -5,8 +5,9 @@ const Book = (props) => {
   const { title, author } = props;
   return (
     <div className="book">
-      <h1 className="bookTitle">{title}</h1>
-      <p className="bookAuthor">{author}</p>
+      <h1 className="book-title">{title}</h1>
+      <p className="book-author">{author}</p>
+      <button type="button" className="remove-book">Remove</button>
     </div>
   );
 };
