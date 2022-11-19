@@ -1,4 +1,4 @@
-const initialState = {};
+const initialState = [];
 
 // Actions
 const ADD_BOOK = bookstore/books/ADD_BOOK
