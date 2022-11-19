@@ -1,8 +1,8 @@
 const initialState = [];
 
 // Actions
-const ADD_BOOK = bookstore/books/ADD_BOOK
-const REMOVE_BOOK = bookstore/books/REMOVE_BOOK
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 // action creators
 const addBookAction = (book) => ({
