@@ -54,6 +54,23 @@ export const removeBookAPI = (id) => async (dispatch) => {
     .then(() => dispatch(removeBookAction(id)));
 };
 
+export const fetchBooksAPI = () => async (dispatch) => {
+  await fetch(API_URL)
+    .then((response) => response.json())
+    .then((books) => {
+      const booksArray = [];
+      Object.keys(books).forEach((key) => {
+        booksArray.push({
+          id: key,
+          title: books[key][0].title,
+          category: books[key][0].category,
+          author: books[key][0].author,
+        });
+      });
+      dispatch(fetchBooks(booksArray));
+    });
+};
+
 // Reducer
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
