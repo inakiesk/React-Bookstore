@@ -6,35 +6,34 @@ import { addBookAction } from '../../redux/books/books';
 const AddBook = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
   const dispatch = useDispatch();
-  const handleSubmit = (e) => {
+
+  const titleChange = (e) => {
+    setTitle(e.target.value);
+  };
+
+  const authorChange = (e) => {
+    setAuthor(e.target.value);
+  };
+  const sendBookToStore = (e) => {
     e.preventDefault();
     const newBook = {
       id: uuidv4(),
       title,
       author,
+      category,
     };
-    dispatch(addBookAction(newBook));
     setTitle('');
     setAuthor('');
+    setCategory('');
+    dispatch(addBookAction(newBook));
   };
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Book Title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          required
-        />
-        <input
-          type="text"
-          placeholder="Author"
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-          required
-        />
+      <form onSubmit={sendBookToStore}>
+        <input type="text" placeholder="Title" value={title} onChange={titleChange} required />
+        <input type="text" placeholder="Author" value={author} onChange={authorChange} required />
         <button type="submit">Add Book</button>
       </form>
     </div>
