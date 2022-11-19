@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeBookAPI, fetchBooksAPI } from '../../redux/books/books';
 
 const BookUnit = () => {
-  const books = useSelector((state) => state.books)
+  const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchBooksAPI());
