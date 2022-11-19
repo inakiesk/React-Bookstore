@@ -1,19 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeBookAction } from '../../redux/books/books';
+import { removeBookAPI, fetchBooksAPI } from '../../redux/books/books';
 
 const BookUnit = () => {
+  const books = useSelector((state) => state.books)
   const dispatch = useDispatch();
-  const dispatchRemoveBook = (id) => {
-    dispatch(removeBookAction(id));
+  useEffect(() => {
+    dispatch(fetchBooksAPI());
+  }, [dispatch]);
+  const removeBookEvent = (book) => {
+    dispatch(removeBookAPI(book.id));
   };
-  const books = useSelector((state) => state.books);
+
   return (
     books.map((book) => (
       <li key={book.id}>
         <h3>{book.title}</h3>
         <p>{book.author}</p>
-        <button type="button" onClick={() => dispatchRemoveBook(book.id)}>Remove</button>
+        <button type="button" onClick={() => removeBookEvent(book.id)}>Remove</button>
       </li>
     ))
   );
