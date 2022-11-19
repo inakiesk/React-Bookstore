@@ -44,6 +44,16 @@ export const addBookAPI = ({
   }));
 };
 
+export const removeBookAPI = (id) => async (dispatch) => {
+  await fetch(`${API_URL}/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then(() => dispatch(removeBookAction(id)));
+};
+
 // Reducer
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
