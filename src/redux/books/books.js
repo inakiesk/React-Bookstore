@@ -1,4 +1,20 @@
-const initialState = [];
+const initialState = [
+  {
+    title: 'Crime and Punishment',
+    author: 'Fiodor Dostoyevski',
+    id: 1,
+  },
+  {
+    title: 'Dialogues',
+    author: 'Plato',
+    id: 2,
+  },
+  {
+    title: 'Wuthering Heights',
+    author: 'Emily Bronte',
+    id: 3,
+  },
+];
 
 // Actions
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';

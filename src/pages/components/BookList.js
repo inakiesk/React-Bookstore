@@ -1,9 +1,9 @@
-import Book from './Book';
+import BookUnit from './Book';
 
 const BookList = () => (
-  <div className="books">
-    <Book title="Crime and Punishment" author="Fiódor Dostoyevski" />
-  </div>
+  <ul className="books">
+    <BookUnit />
+  </ul>
 );
 
 export default BookList;
