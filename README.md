@@ -1,17 +1,17 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+- [🛠 Built With](#built-with)
+- [Tech Stack](#tech-stack)
+- [Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+- [Setup](#setup)
+- [Prerequisites](#prerequisites)
+- [Install](#install)
+- [Usage](#usage)
+- [Run tests](#run-tests)
+- [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -30,27 +30,25 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This project uses react and uses redux for the data.
 
 <details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
+<summary>Client</summary>
+<ul>
+<li><a href="https://reactjs.org/">React.js</a></li>
+</ul>
 </details>
 
 <details>
 <summary>Database</summary>
-  <ul>
-    <li><a href="https://redux.js.org/">Redux</a></li>
-  </ul>
+<ul>
+<li><a href="https://redux.js.org/">Redux</a></li>
+</ul>
 </details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - **Single page application**
 - **The user can add and remove books**
@@ -70,7 +68,6 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> This project started with the intention of learning react-redux.
 
 To get a local copy up and running, follow these steps.
 
@@ -89,8 +86,8 @@ Clone this repository to your desired folder:
 Example commands:
 
 
---cd my-folder
---git clone git@github.com:myaccount/my-project.git
+- cd my-folder
+- git clone git@github.com:myaccount/my-project.git
 
 
 
@@ -157,11 +154,11 @@ Give a ⭐️ if you like this project!
 
 - **Can use or modify this project?**
 
-  - Yes, you can do so locally
+- Yes, you can do so locally
 
 - **Is this a personal project?**
 
-  - [No, this is a Microverse project]
+- No, this is a Microverse project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
