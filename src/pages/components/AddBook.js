@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBookAction } from '../redux/books/books';
+import { addBookAction } from '../../redux/books/books';
 
 const AddBook = () => {
   const [title, setTitle] = useState('');
