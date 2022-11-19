@@ -1,5 +1,7 @@
 const initialState = [];
 
+const API_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/IerfhGMngtud1245agfl/books';
+
 // Actions
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
@@ -21,6 +23,27 @@ const fetchBooks = (books) => ({
   payload: books,
 });
 
+export const addBookAPI = ({
+  id, title, author, category,
+}) => async (dispatch) => {
+  const book = {
+    item_id: id,
+    title,
+    author,
+    category,
+  };
+  await fetch(API_URL, {
+    method: 'POST',
+    body: JSON.stringify(book),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
+  dispatch(addBookAction({
+    id, title, author, category,
+  }));
+};
+
 // Reducer
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -35,5 +58,5 @@ const bookReducer = (state = initialState, action) => {
   }
 };
 
-export { addBookAction, removeBookAction };
+export { addBookAction, removeBookAction, fetchBooks };
 export default bookReducer;
