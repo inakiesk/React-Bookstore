@@ -30,6 +30,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
+> This project uses react and uses redux for the data.
 
 <details>
   <summary>Client</summary>
@@ -49,6 +50,7 @@
 
 ### Key Features <a name="key-features"></a>
 
+> Describe between 1-3 key features of the application.
 
 - **Single page application**
 - **The user can add and remove books**
@@ -68,6 +70,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+> This project started with the intention of learning react-redux.
 
 To get a local copy up and running, follow these steps.
 
@@ -86,8 +89,8 @@ Clone this repository to your desired folder:
 Example commands:
 
 
-- cd my-folder
-- git clone git@github.com:myaccount/my-project.git
+--cd my-folder
+--git clone git@github.com:myaccount/my-project.git
 
 
 
@@ -158,7 +161,7 @@ Give a ⭐️ if you like this project!
 
 - **Is this a personal project?**
 
-  - No, this is a Microverse project
+  - [No, this is a Microverse project]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
