@@ -1,51 +1,175 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# 📗 Table of Contents
 
-# Bookstore Project
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-> This is my Bookstore Microverse project!
+<!-- PROJECT DESCRIPTION -->
 
-Created by:
-- Inaki Eskauriatza
+# 📖 [React-Bookstore] <a name="about-project"></a>
 
-## Built With
+**[React-Bookstore]** is a Microverse project for setting up a bookstore using react-redux.
 
-- React
+## 🛠 Built With <a name="built-with"></a>
 
-## Getting Started
+### Tech Stack <a name="tech-stack"></a>
 
+> This project uses react and uses redux for the data.
 
-To get a local copy up and running follow these simple example steps.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **Single page application**
+- **The user can add and remove books**
+- **Redux data management**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://6379195bb5af547612eab86a--grand-paletas-03387d.netlify.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> This project started with the intention of learning react-redux.
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-    -Web browser
-    -Internet connection
 
-### Install & Usage
-    -Download the files from the repository, you can use git clone in your terminal.
-    -Once the files are downloaded you can open the files in your preferred browser.
+In order to run this project you need:
 
-    
-## Author
+-Internet Connection
+
+
+### Setup
+
+Clone this repository to your desired folder:
+
+
+Example commands:
+
+
+--cd my-folder
+--git clone git@github.com:myaccount/my-project.git
+
+
+
+### Deployment
+
+You can deploy this project locally using:
+
+-- npm start
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Inaki Eskauriatza**
 
 - GitHub: [@inakiesk](https://github.com/inakiesk)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/i%C3%B1aki-eskauriatza-b82684241?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1VEaqHfJTmWAhjqdjRvumA%3D%3D)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **API based**
+- [ ] **New styling**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-If you want to leave an issue feel free to do so here: [Github issue page](https://github.com/inakiesk/Leaderboard/issues).
 
+Feel free to check the [issues page](https://github.com/inakiesk/React-Bookstore/issues).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Thank you Microverse, Youtube, Wikipedia, W3Schools, Codegrepper and my Microverse friends that gave me advice.
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This project is [MIT](LICENSE) licensed.
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+
+- **Can use or modify this project?**
+
+  - Yes, you can do so locally
+
+- **Is this a personal project?**
+
+  - [No, this is a Microverse project]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
