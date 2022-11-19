@@ -1,20 +1,22 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeBookAction } from '../redux/books/books';
 
-const Book = (props) => {
-  const { title, author } = props;
+const BookUnit = () => {
+  const dispatch = useDispatch();
+  const dispatchRemoveBook = (id) => {
+    dispatch(removeBookAction(id));
+  };
+  const books = useSelector((state) => state.books);
   return (
-    <div className="book">
-      <h1 className="book-title">{title}</h1>
-      <p className="book-author">{author}</p>
-      <button type="button" className="remove-book">Remove</button>
-    </div>
+    books.map((book) => (
+      <li key={book.id}>
+        <h3>{book.title}</h3>
+        <p>{book.author}</p>
+        <button type="button" onClick={() => dispatchRemoveBook(book.id)}>Remove</button>
+      </li>
+    ))
   );
 };
 
-Book.propTypes = {
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-};
-
-export default Book;
+export default BookUnit;
